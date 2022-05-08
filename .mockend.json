@@ -27,18 +27,19 @@
     "isPublic": {
       "boolean": {}
     },
-    "Post": {
+  },
+},
+{
+  "Comment": {
+    "authorPost": {
+      "belongsTo": "Post"
+    }
+  }
+},
+{
+  "Post": {
     "userComments": {
       "hasMany": "Comment"
     }
-    }
-  },
-  {
-    "Comment": {
-      "authorPost": {
-        "belongsTo": "Post"
-      }
-    }
   }
-
 }
