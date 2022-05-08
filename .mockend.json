@@ -28,15 +28,11 @@
       "boolean": {}
     },
   },
-},
-{
   "Comment": {
     "authorPost": {
       "belongsTo": "Post"
     }
-  }
-},
-{
+  },
   "Post": {
     "userComments": {
       "hasMany": "Comment"
