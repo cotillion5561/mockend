@@ -26,6 +26,19 @@
     },
     "isPublic": {
       "boolean": {}
+    },
+    "Post": {
+    "userComments": {
+      "hasMany": "Comment"
+    }
+    }
+  },
+  {
+    "Comment": {
+      "authorPost": {
+        "belongsTo": "Post"
+      }
     }
   }
+
 }
